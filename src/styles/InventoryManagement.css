@@ -1,0 +1,92 @@
+.low-stock-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFF3E0;
+  border: 1px solid #FF9800;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  color: #E65100;
+  font-weight: 500;
+}
+
+.inv-table-wrapper {
+  overflow-x: auto;
+}
+
+.row-low {
+  background-color: #FFF8F0 !important;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stock-ok {
+  background-color: #E8F5E9;
+  color: var(--success);
+}
+
+.stock-low {
+  background-color: #FFEBEE;
+  color: var(--error);
+}
+
+.qty-input {
+  width: 110px;
+  padding: 8px 10px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.qty-input:focus {
+  border-color: var(--primary-green);
+  outline: none;
+}
+
+.inv-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.inv-btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.inv-btn-add {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.inv-btn-add:hover {
+  background-color: var(--dark-green);
+}
+
+.inv-btn-remove {
+  background-color: var(--white);
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.inv-btn-remove:hover:not(:disabled) {
+  background-color: #FFEBEE;
+}
+
+.inv-btn-remove:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
